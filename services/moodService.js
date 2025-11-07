@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-const moodSchema = new mongoose.Schema({
+/*const moodSchema = new mongoose.Schema({
   userID: String,
   history: [
     {
@@ -9,6 +9,11 @@ const moodSchema = new mongoose.Schema({
       date: String,
     },
   ],
+});*/
+const moodSchema = new mongoose.Schema({
+  mood: String,
+  message: String,
+  date: String,
 });
 
 const Mood = mongoose.model("Mood", moodSchema);
